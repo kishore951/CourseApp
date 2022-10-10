@@ -6,18 +6,23 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AddCourseComponent } from './add-course/add-course.component';
 import { RouterModule, Routes } from '@angular/router';
+import { ViewAllCourseComponent } from './view-all-course/view-all-course.component';
 
 
 const appRoutes:Routes=[
   {
     path:"",component:AddCourseComponent
+  },
+  {
+    path:"search",component:ViewAllCourseComponent
   }
 ]
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    AddCourseComponent
+    AddCourseComponent,
+    ViewAllCourseComponent
   ],
   imports: [
     BrowserModule,
