@@ -5,26 +5,26 @@
             <div class="row g-3">
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
                     <label for="Course Title" class="form-label">Course Title</label>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="courseTitle" [(ngModel)]="courseTitle">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
                     <label for="Course Description" class="form-label">Course Description</label>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="courseDescription" [(ngModel)]="courseDescription">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
                     <label for="Course Duration" class="form-label">Course Duration</label>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="courseDuration" [(ngModel)]="courseDuration">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
                     <label for="Course Date" class="form-label">Course Date</label>
-                    <input type="date" name="" id="" class="form-control">
+                    <input type="date" name="" id="" class="form-control" [name]="courseDate" [(ngModel)]="courseDate">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
                     <label for="Course Venue" class="form-label">Course Venue</label>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="courseVenue" [(ngModel)]="courseVenue">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                    <button class="btn btn-success">Submit</button>
+                    <button class="btn btn-success" (click)="readValues()">Submit</button>
                 </div>
             </div>
         </div>
