@@ -12,11 +12,12 @@ export class ViewAllCourseComponent implements OnInit {
     this.fetchData()
    }
 
-
+status:boolean=false
 fetchData=()=>{
   this.myapi.courseData().subscribe(
     (data)=>{
       this.courseData=data
+      this.status=true
     }
   )
 }
